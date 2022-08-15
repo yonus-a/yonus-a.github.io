@@ -756,6 +756,23 @@
 		</div>
 	</div> <!-- close div.content_inner -->
 </div>  <!-- close div.content -->
+ <script>
+      var portrait = window.matchMedia("(orientation: portrait)");
+      var viewport = document.querySelector("meta[name='viewport']");
 
+      portrait.addEventListener("change", ({ matches }) => {
+        if (matches) {
+          viewport.setAttribute(
+            "content",
+            "width=device-width, initial-scale=1"
+          );
+        } else {
+          viewport.setAttribute(
+            "content",
+            "width=device-width, initial-scale=0.7"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
