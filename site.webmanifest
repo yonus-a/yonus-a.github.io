@@ -15,6 +15,6 @@
     ],
     "theme_color": "#ffffff",
     "background_color": "#ec374e",
-    "display_override": ["window-controls-overlay", "minimal-ui"],
+    "display_override": ["window-controls-overlay"],
     "display": "standalone"
 }
